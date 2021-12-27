@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "app-oechsle/dist/app-oechsle",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

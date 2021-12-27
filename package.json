@@ -1,0 +1,23 @@
+{
+  "name": "project-oechsle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://brayanhp: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@github.com/brayanhp/oechsle.git"
+  },
+  "author": "Brayan Huaman Pereda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brayanhp/oechsle/issues"
+  },
+  "homepage": "https://github.com/brayanhp/oechsle#readme",
+  "dependencies": {
+    "@angular/cli": "^6.2.9",
+    "firebase": "^9.6.1"
+  }
+}
