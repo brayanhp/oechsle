@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/brayanhp/oechsle#readme",
   "dependencies": {
-    "@angular/cli": "^6.2.9",
+    "@angular/cli": "^13.1.2",
     "firebase": "^9.6.1"
   }
 }
