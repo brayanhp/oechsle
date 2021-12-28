@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="d-flex align-items-start flex-column bd-highlight mb-3">
+    <div class="mt-auto p-2 bd-highlight">
+      <button type="button" class="btn btn-primary" routerLink="/">Lista de Clientes</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <h4>Agregar Cliente</h4>
+    <form #clientForm="ngForm" (ngSubmit)="onSubmit(clientForm)">
+
+      <div class="mb-3">
+          <label class="form-label">Nombre</label>
+          <input class="form-control" name="nombre" #name="ngModel" type="text"
+          [(ngModel)]="client.nombre" placeholder="Ingrese nombre" required >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Apellidos</label>
+        <input class="form-control" name="apellido" #name="ngModel" type="text"
+          [(ngModel)]="client.apellido" placeholder="Ingrese apellidos" required >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Edad</label>
+        <input class="form-control" name="edad" #name="ngModel" type="number"
+        [(ngModel)]="client.edad" placeholder="Edad" required >
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Fecha de Nacimiento</label>
+          <input class="form-control" name="fecha_nacimiento" #name="ngModel" type="date"
+          [(ngModel)]="client.fecha_nacimiento" placeholder="Fecha de Nacimiento" required >
+        </div>
+
+          <div class="form-group float-right">
+            <button type="submit" class="btn btn-success"
+              [disabled]="!clientForm.valid" [disabled]="clientForm.invalid">
+                <i class="bi bi-plus" aria-hidden="true"></i>Agregar Cliente</button>
+          </div>
+      </form>
+  </div>
+</div>

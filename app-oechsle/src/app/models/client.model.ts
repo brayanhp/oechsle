@@ -1,7 +1,7 @@
 export interface IClient {
   id: string;
   nombre: string;
-  apellidos: string;
+  apellido: string;
   edad: number;
   fecha_nacimiento: string;
 }

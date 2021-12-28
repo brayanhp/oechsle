@@ -18,4 +18,9 @@ export class ClientService {
     return collectionData(dataClients, {idField: 'id'}) as Observable<IClient[]>;
   }
 
+  addClient(client: IClient) {
+    const clientPayload = collection(this.firestore, 'clientes');
+    return addDoc(clientPayload, client);
+  }
+
 }
